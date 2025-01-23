@@ -2,6 +2,6 @@
 
 
 # -ATT--Patrimonio
-Criação de uma sistema para registrar equipamentos.
+Criação de um sistema de patrimônio; Registrar equipamentos, moveis e quaisquer outros itens.
 ## Autor
 Murillo Mendonça Mascarenha.
