@@ -1,0 +1,9 @@
+Nome:12
+E-mail:123
+Telefone:computador
+Idade:eletronico
+Idade:mouse,tela,teclado quebrado
+Idade:sala 16
+Idade:23/01/2025
+Idade:23/01/2025
+-----------------------------------------
