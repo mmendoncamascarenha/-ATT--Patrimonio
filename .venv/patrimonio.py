@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QMessageBox
 import sys 
 class Patrimonio(QWidget):
     def __init__(self):
@@ -135,6 +135,7 @@ class Patrimonio(QWidget):
         arquivo.write(f"Data de Aquisição:{self.edit_aquisicao.text()}\n")
         arquivo.write("")
         arquivo.close()
+        QMessageBox.information(self,"Salvo","Os dados do patrimônio foram salvos.")
         
 
 

@@ -6,4 +6,27 @@ descrição:123
 Localização:123
 Data de fabricação:123
 Data de Aquisição:1223
------------------------------------------
+-----------------------------------------Id:12332234
+Número de série:4
+Nom do patrimônio:343
+Tipo:43
+descrição:43
+Localização:34
+Data de fabricação:3
+Data de Aquisição:34
+Id:12
+Número de série:12
+Nom do patrimônio:12
+Tipo:12
+descrição:12
+Localização:12
+Data de fabricação:12
+Data de Aquisição:12
+Id:12
+Número de série:12
+Nom do patrimônio:12
+Tipo:12
+descrição:12
+Localização:12
+Data de fabricação:12
+Data de Aquisição:12
