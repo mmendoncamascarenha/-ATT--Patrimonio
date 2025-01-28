@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 import sys 
-class patrimonio(QWidget):
+class Patrimonio(QWidget):
     def __init__(self):
         super().__init__()
 
@@ -46,7 +46,7 @@ class patrimonio(QWidget):
         self.label_aquisicao = QLabel("Data de Aquisição:")
         self.label_aquisicao.setStyleSheet("QLabel{font-size:12pt}")
 
-########################################################################################################################################
+##########################################################################################################################################################
         # LineEdit para o id  
         self.edit_id = QLineEdit()
         self.edit_id.setStyleSheet("QLineEdit{font-size:12pt}")
@@ -78,7 +78,7 @@ class patrimonio(QWidget):
         # LineEdit para o nome do cliente 
         self.edit_aquisicao= QLineEdit()
         self.edit_aquisicao.setStyleSheet("QLineEdit{font-size:12pt}")
-#####################################################################################################################################################################
+##########################################################################################################################################################
         self.button = QPushButton("Cadastrar")
         self.button.setStyleSheet("QPushButton{background-color:gray;color:white;font-size:12pt;font-weight:bold}")
 
@@ -124,16 +124,16 @@ class patrimonio(QWidget):
     
     def patrimonio(self):
         # Vamos criar uma variavel que fará referencia ao arquivo de texto
-        arquivo = open("cadastros.txt","+a")
-        arquivo.write(f"Nome:{self.edit_id.text()}\n")
-        arquivo.write(f"E-mail:{self.edit_numero.text()}\n")
-        arquivo.write(f"Telefone:{self.edit_nome.text()}\n")
-        arquivo.write(f"Idade:{self.edit_tipo.text()}\n")
-        arquivo.write(f"Idade:{self.edit_descricao.text()}\n")
-        arquivo.write(f"Idade:{self.edit_localizacao.text()}\n")
-        arquivo.write(f"Idade:{self.edit_fabricacao.text()}\n")
-        arquivo.write(f"Idade:{self.edit_aquisicao.text()}\n")
-        arquivo.write("-----------------------------------------")
+        arquivo = open("cadastros.txt","+a",encoding="utf8")
+        arquivo.write(f"Id:{self.edit_id.text()}\n")
+        arquivo.write(f"Número de série:{self.edit_numero.text()}\n")
+        arquivo.write(f"Nom do patrimônio:{self.edit_nome.text()}\n")
+        arquivo.write(f"Tipo:{self.edit_tipo.text()}\n")
+        arquivo.write(f"descrição:{self.edit_descricao.text()}\n")
+        arquivo.write(f"Localização:{self.edit_localizacao.text()}\n")
+        arquivo.write(f"Data de fabricação:{self.edit_fabricacao.text()}\n")
+        arquivo.write(f"Data de Aquisição:{self.edit_aquisicao.text()}\n")
+        arquivo.write("")
         arquivo.close()
         
 
@@ -143,13 +143,10 @@ class patrimonio(QWidget):
 
 
 
-
-
-
-app = QApplication(sys.argv)
+#app = QApplication(sys.argv)
 #para iniciar a tela
-tela =patrimonio()
+#tela =Patrimonio()
 #exibir a tela
-tela.show()
+#tela.show()
 #fechar e sair da memoria
-app.exec()
+#app.exec()
